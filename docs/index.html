@@ -10,11 +10,11 @@
   <body>
     
     <div class="row">
-        <div class="col-1 col-menu-per bg-primary-per">
+        <div id="lateral-menu" class="col-2 col-menu-per">
         
-            <nav class="navbar navbar-light ">
+            <nav class="navbar navbar-light">
               <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" onclick="myFunction()" type="button" data-bs-toggle="collapse" data-bs-target="#menu-desplegado" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                   <svg viewBox="0 0 100 80" width="40" height="40">
                     <rect width="100" height="14" rx="8" fill="#3f1716"></rect>
                     <rect y="30" width="100" height="14" rx="8" fill="#3f1716"></rect>
@@ -23,34 +23,44 @@
                 </button>
               </div>
             </nav>
-            <div class="collapse" id="navbarToggleExternalContent">
-              <div class="p-1">
-                <h5 class="text-dark">Collapsed content</h5>
+            <div class="collapse" id="menu-desplegado">
+              
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Edificios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias</a>
+                  </li>
+                </ul>
               </div>
             </div>
 
         </div>
 
-
-
-        <div class="col-10">
+        <div class="col-9">
 
             <div class="row">
                 <div class="col"></div>   
-
-                <div class="col text-center" >
+                <div class="col text-center" style="margin-left: -95px;" >
 
                   <div class="row">
                     <div class="col">
-                      <img src="images/LOGO.png" alt="LOGO" width="250" height="210">
+                      <a href="index.html">
+                        <img src="images/LOGO.png" alt="LOGO" width="250" height="210">
+                      </a>
                     </div>
                   </div>
 
                   <div class="row">
-                    <div class="col">
+                    <div class="col" id="menu-central">
                       <ul class="nav justify-content-center">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Edificios</a>
+                          <a class="nav-link" href="index.html">Edificios</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Nosotros</a>
@@ -63,71 +73,86 @@
                   </div>
 
                   <div class="row">
-                    <div class="col bg-primary-per">
+                    <div class="col bg-primary-per" id="div-buscador">
                       <form class="container-fluid">
                         <div class="input-group">
-                          <input type="text" class="form-control" placeholder="Buscador">
+                          <input type="text" class="form-control" placeholder="Buscador" id="buscador">
                         </div>
                       </form>
                     </div>
                   </div>
+
                 </div>
                 <div class="col"></div>
             </div>
             <div class="row">
-              <div class="col">
-                <img src="images/img3.png" alt="LOGO" width="250" height="171">
+              <div class="col-6">
+                <a href="#">
+                  <img style="max-width: 100%; height: auto;" src="images/img3.png" alt="img3" >
+                </a>     
               </div>
-              <div class="col">
+              <div class="col-2">
                 <div class="row">
                   <div class="col">
-                    <img src="images/img1.png" alt="LOGO" width="250" height="171">
+                    <a href="#">
+                      <img style="max-width: 100%; height: auto; margin-top: 85px;" src="images/img2.png" alt="img2" >
+                    </a>      
                   </div>
                 </div>
                 <div class="row">
                   <div class="col">
-                    <img src="images/img2.png" alt="LOGO" width="250" height="171">
+                    <a href="#">
+                      <img style="max-width: 100%; height: auto; margin-top: 10px;" src="images/img1.png" alt="img1" >
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col-3">
+                <div class="row">
+                  <div class="col">
+                    <a href="#">
+                      <img style="max-width: 100%; height: auto;" src="images/img5.png" alt="img5" >
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <a href="santacruz.html">
+                      <img style="max-width: 100%; height: auto; margin-top: -20px;" src="images/img4.png" alt="img4" >
+                    </a>
+                  </div>
+                </div>
+              </div>
 
-                <div class="row">
-                  <div class="col">
-                    <img src="images/img5.png" alt="LOGO" width="250" height="171">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <img src="images/img4.png" alt="LOGO" width="250" height="171">
-                  </div>
-                </div>
-              
-              </div>
-
-            </div>
+            </div>     
         </div>
-
-
-
-
 
         <div class="col-1 col-lateral-per">
           <div class="row">
-            <div class="col-1 bg-primary-per col-lateral-per">
-              
-            </div>
-            <div class="col-1">
-              
-            </div>
-            <div class="col bg-primary-per col-lateral-per">
-              
-            </div>
+            <div class="col-1 bg-primary-per col-lateral-per"></div>
+            <div class="col-1"></div>
+            <div class="col bg-primary-per col-lateral-per"></div>
           </div>
         </div>
     </div>
        
+    <script>
+      var color1= "white";
+      var color2= "#deb84d";
 
+      var color = color1;
+
+      function myFunction() {
+
+        if(color == color1){
+          color = color2;
+          document.getElementById("lateral-menu").style.backgroundColor = color2;
+        }else{
+          color = color1;
+          document.getElementById("lateral-menu").style.backgroundColor = color1;
+        }
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

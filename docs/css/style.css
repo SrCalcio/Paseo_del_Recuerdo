@@ -1,9 +1,39 @@
 .col-menu-per {
-    height: 800px;
+    height: 1000px;
 }
 .col-lateral-per{
-    height: 800px;
+    height: 1000px;
 }
 .bg-primary-per{
     background-color: #deb84d;
+}
+#menu-desplegado a{
+    color:#3f1716;
+    font-weight: bold;
+}
+#menu-desplegado li{
+    margin-top: 80px;
+    margin-left: 50px;
+}
+#menu-central {
+    width: 600px;
+}
+#menu-central a{
+    color:#3f1716;
+    font-weight: bold;
+}
+#menu-central li{
+    margin:7px;
+    
+}
+#div-buscador{
+    border-radius: 10px;
+}
+#buscador{
+    background-color: transparent;
+    border-inline-width: 0px;
+}
+#buscador::placeholder{
+    color: white;
+    font-weight:500;
 }
